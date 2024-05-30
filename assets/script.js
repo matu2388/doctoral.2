@@ -1,11 +1,8 @@
-import { tileLayerSelect } from '../config/tile-layer/function';
-import { tileLayers } from '../config/tile-layer/data';
-
 document.addEventListener("DOMContentLoaded", function() {
     const map = L.map('map').setView([-26.986111, -66.733333], 13);
 
-    tileLayerSelect(tileLayers.baseLayers.esri.worldImagery.map, {
-        attribution: tileLayers.baseLayers.esri.worldImagery.attribution
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     const museoMarker = L.marker([-26.988259032403032, -66.73797058911501]).addTo(map).bindPopup(`
@@ -18,3 +15,4 @@ document.addEventListener("DOMContentLoaded", function() {
         <h5>Hostería Pirucha</h5>
     `);
 });
+
