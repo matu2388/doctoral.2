@@ -1,3 +1,4 @@
+import L from '../../node_modules/leaflet/dist/leaflet';
 import { Map, marker, point } from 'leaflet';
 import { sitios } from '../../dist/assets/data/markers/sitios';
 import { tileLayerSelect } from '../../config/tile-layer/function';
