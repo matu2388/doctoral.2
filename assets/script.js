@@ -1,4 +1,3 @@
-import L from 'leaflet';
 import { tileLayerSelect } from '../config/tile-layer/function';
 import { tileLayers } from '../config/tile-layer/data';
 
