@@ -1,5 +1,5 @@
 import L from '../../node_modules/leaflet/dist/leaflet';
-import { Map, marker, point } from 'leaflet';
+//import { Map, marker, point } from 'leaflet';
 import { sitios } from '../../dist/assets/data/markers/sitios';
 import { tileLayerSelect } from '../../config/tile-layer/function';
 import { tileLayers} from '../../config/tile-layer/data';
@@ -13,7 +13,7 @@ tileLayerSelect(tileLayers.baseLayers.esri.worldImagery.map, {
 
     // Carga dinámica de los marcadores
 sitios.forEach((point) => {
-    const markerInstance = marker([point.lat, point.lon]).addTo(map);
+    const markerInstance = L.marker([point.lat, point.lon]).addTo(map);
     markerInstance.bindPopup(`<b>${point.name}</b>`); // Agregar pop-up con el nombre del sitio
 });
 
