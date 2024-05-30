@@ -1,0 +1,36 @@
+{
+    "name": "leaflet",
+    "version": "1.0.0",
+    "description": "Proyectos con la librería Leaflet y TS paso a paso",
+    "main": "index.js",
+    "scripts": {
+      "start": "npx parcel ./index.html --open",
+      "build": "npx parcel build index.html --public.url '.'"
+    },
+    "keywords": [
+      "leaflet",
+      "typescript",
+      "maps",
+      "mapas",
+      "geojson",
+      "polyline",
+      "marker",
+      "points"
+    ],
+    "author": "Matías Lepori <matu.lepori@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "csv-parser": "^3.0.0",
+      "leaflet": "^1.7.1",
+      "typescript": "4.4"
+    },
+    "devDependencies": {
+      "@types/leaflet": "^1.9.12",
+      "@types/node": "^20.12.12",
+      "@typescript-eslint/eslint-plugin": "^7.8.0",
+      "@typescript-eslint/parser": "^7.8.0",
+      "eslint": "^8.57.0",
+      "parcel-bundler": "^1.12.5"
+    }
+  }
+  
