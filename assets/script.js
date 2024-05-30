@@ -1,6 +1,6 @@
 import L from 'leaflet';
-import { tileLayerSelect } from '../../../config/tile-layer/functions';
-import { tileLayers } from '../../../config/tile-layer/data';
+import { tileLayerSelect } from '../config/tile-layer/function';
+import { tileLayers } from '../config/tile-layer/data';
 
 
 const map = new L.Map('map').setView([-26.986111, -66.733333], 13);
