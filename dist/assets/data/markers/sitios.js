@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.sitios = void 0;
-exports.sitios = [
+const sitios = [
     {
         name: 'El Médano',
         lat: -26.89785,
@@ -368,3 +365,5 @@ exports.sitios = [
         lon: -66.843853,
     },
 ];
+
+export { sitios };
