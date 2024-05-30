@@ -1,7 +1,7 @@
 import { sitios } from '../../dist/assets/data/markers/sitios'
 
 document.addEventListener("DOMContentLoaded", function() {
-    const mymap = new Map('map').setView([0, 0], 13);
+    const mymap = new L.map('map').setView([0, 0], 13);
 
 tileLayerSelect(tileLayers.baseLayers.esri.worldImagery.map, {
     attribution: tileLayers.baseLayers.esri.worldImagery.atribution

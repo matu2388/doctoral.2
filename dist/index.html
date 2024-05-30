@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación Doctoral</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            overflow: hidden;
+        }
+        .cover {
+            float: left;
+            margin-right: 100px;
+            margin-left: 200px;
+        }
+        .info {
+            float: right;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            margin-right: 200px;
+            margin-left: 100px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 1rem;
+            background: #fff;
+            margin-top: 1rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
+        .publicaciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .publicacion {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .publicacion img {
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .publicacion h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .publicacion p {
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .publicacion a {
+            text-decoration: none;
+            color: #333;
+        }
+        #map {
+            height: 400px;
+            margin: 20px 0;
+        }
+        .section-link {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .section-link:hover {
+            text-decoration: underline;
+        }</style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<script src="/metodologia.js"></script></head>
+<body>
+    <header>
+        <div class="cover">
+            <img src="https://raw.githubusercontent.com/matu2388/doctoral-ciivac/main/caratula.jpg" alt="Carátula de la Tesis" style="max-width: 100%; height: 400px;">
+        </div>
+        <div class="info">
+            <p>Tesista: Arql. Matías Lepori</p>
+            <p>Directora: Dra. Alejandra Korstanje</p>
+            <p>Co-Directora: Dra. Marina Miraglia</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Introducción</h2>
+            <p>Cuando uno se propone escribir una tesis, o más bien investigar para después poder culminar escribiendo una tesis, hay cierta idea primigenia que, con el pasar de los días (semanas, meses y años), va sufriendo una serie de cambios: reformulaciones, variaciones, ampliaciones y reducciones. Pero también hay cosas que permanecen, sino inalterables al menos en esencia y fundamentación.</p><p>
+            </p><p>Y esta tesis, como el propio tema de investigación arqueológica, se trata un poco de eso también. De cambios y continuidades. De modificaciones y persistencias. De cómo algunas cosas (y cuando digo “cosas”, me refiero tanto a cosas materiales como a prácticas) dan lugar a otras.</p><p>
+            </p><p>Desgranando el título de esta investigación, en las prácticas asociadas a los procesos de conformación de paisajes en la larga duración, el foco está puesto en tres grandes elementos: el paisaje, las prácticas y el tiempo. Dependiendo de dónde uno elija centrar estas cartografías de regularidades, tensiones y rupturas, habrá distintas maneras de acercamiento, distintas metodologías empleadas, distintas preguntas que podemos hacer y diversas escalas. De la misma manera, cada uno de estos elementos puede funcionar como puerta de ingreso a la investigación, limitando y posibilitando distintos enfoques, tanto analíticos como interpretativos. No obstante, mi interés radica en poner en diálogo, relación y enredo a estos elementos en los modos de vida de los valles altos catamarqueños.</p>
+        </section>
+
+        <section>
+            <h2><a href="/metodologia.html" class="section-link">Metodología</a></h2>
+            <p>Descripción breve de los métodos utilizados en la investigación.</p>
+        </section>
+
+        <section>
+            <h2><a href="/resultados.html" class="section-link">Resultados</a></h2>
+            <p>Resumen de los principales hallazgos y conclusiones de la investigación.</p>
+        </section>
+
+        <section>
+            <h2><a href="/publicaciones.html" class="section-link">Publicaciones</a></h2>
+            <p>Enlaces a publicaciones relevantes.</p>
+        </section>
+
+        <section>
+            <h2>Mapa Interactivo</h2>
+            <div id="map"></div>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <p>E-mail: <a href="mailto:mlepori@indya.unju.edu.ar">mlepori@indya.unju.edu.ar</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/matulepori" target="_blank">@matulepori</a></p>
+            <p>Academia: <a href="https://unju.academia.edu/MatíasLépori" target="_blank">https://unju.academia.edu/MatíasLépori</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Matías Lepori. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="/script.7425a60d.js"></script>
+    <script src="/sitios.bd77a9a0.js"></script>
+</body>
+</html>
